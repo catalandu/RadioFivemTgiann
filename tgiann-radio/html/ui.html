@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Radio</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div id="radio">
+            <img src="./img/radio.png" alt="">
+          
+            <button data-toggle="tooltip" title="Leave Frequency" id="onoff" type="submit" name="onoff"></button>
+          
+            <div class="ses-menu">
+                <div><button data-toggle="tooltip" title="Volume Down" id="kis" type="submit" name="kis"></button></div>
+                <div><button data-toggle="tooltip" title="Volume Up" id="ac" type="submit" name="ac"></button></div>
+            </div> 
+    
+            <div class="ana-ekran">
+                <div class="üst-yazi">MENU</div>
+
+                <div class="orta-yazi">RADIO FREQUENCY</div>
+
+                <div class="channel">
+                    <form id="login-form">
+                        <input id="channel" onKeyUp="if(this.value<1){this.value='1';}" type="number" name="channel" value="1" min="1" max="999" placeholder="1-999">
+                        <button id="submit" type="submit" name="channel">Connect</button>
+                    </form>
+                    
+                </div>
+
+            </div>
+        </div>
+        <script src="js/script.js" type="text/javascript"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    position: relative;
+    font-family: sans-serif;
+    overflow: hidden;
+    display: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background: 0 !important;
+    zoom: 85%;
+}
+
+@font-face {
+  font-family: 'digital-7regular';
+  src: url('../font/digital7-1e1z-webfont.woff2') format('woff2'),
+       url('../font/digital7-1e1z-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#radio {
+  right: 10px;
+  position: fixed;
+  bottom: 0;
+}
+
+#radio img {
+  width: 300px;
+}
+
+#onoff {
+  position: absolute;
+  top: 47%;
+  right: 16%;
+  padding: 34px 35px;
+  opacity: .0;
+}
+
+.onoff button {
+ padding: 40px 55px;
+ opacity: .0;
+}
+
+.ana-ekran {
+  position: absolute;
+  font-family: digital-7regular;
+  top: 62%;
+  left: 14.5%;
+  width: 71%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.üst-yazi {
+  font-size: 60px;
+  margin-top: -10px;
+}
+
+.orta-yazi {
+  margin-top: 2px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.channel input {
+  text-align: center;
+  border: none;
+  color: #333;
+  background: 0;
+  padding: 11px;
+  width: 100%;
+  border-bottom: 2px solid #333;
+  border-top: 2px solid #333;
+  font-size: 34px;
+  outline: 0;
+}
+
+.channel button { 
+  border: 0;
+  background: 0;
+  padding: 5px 10px;
+  border: 2px solid #333;
+  border-radius: 3px;
+  width: 79px;
+  margin-top: 7px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.channel button:hover { 
+  font-size: 17px;
+  cursor: pointer;
+}
+
+::selection {
+  background: 0;
+}
+
+.channel input::selection {
+  background: #333;
+  color: #fff;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ses-menu {
+  position: absolute;
+  height: 28px;
+  top: 55.5%;
+  right: 37%;
+  display: flex;
+  flex-direction: row;
+}
+
+.ses-menu button {
+  padding: 5px;
+  width: 38px;
+  opacity: 0;
+}
